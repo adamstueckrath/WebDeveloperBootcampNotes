@@ -83,17 +83,44 @@
 		</form>
 	</div>
 	<!-- More form practice with radio and check boxes -->
+	<!-- the name tag is how you can link input choices together - so now you can only pick 1 option with radio buttons -->
+	<!-- if a button is at the end of a form, it will act as a submit input type -->
 	<div>
 		<h3>More form practice</h3>
 		<p>Do you prefer cats or dogs?</p>
 		<form>
 			<label for="dogs">Dogs:</label>
-			<input id="dogs" type="radio" name="petChoice">
+			<input name="petChoice" id="dogs" type="radio" value="DOGS">
 			<label for="cats">Cats:</label>
-			<input id="cats" type="radio" name="petChoice">
+			<input name="petChoice" id="cats" type="radio" value="CATS">
+
+			<!-- selects are good for dropdown list -->
+			<p>What's your current mood?</p>
+			<select name="mood">
+				<option value="happy">😁</option>
+				<option value="sad">😥</option>
+				<option value="crazy">🤪</option>
+			</select>
+
+			<p>Tell me something</p>
+			<textarea rows="5" cols="10" name="paragraph"></textarea>
 			<button>Go!</button>
 		</form>
 	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
